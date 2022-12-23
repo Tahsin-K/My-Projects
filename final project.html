@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varsågod</title>
+    <style>
+      body {
+        background: linear-gradient(
+          115deg,
+          rgb(0, 0, 0) 5.8%,
+          rgb(178, 14, 14) 112.6%
+        );
+
+        color: white;
+        text-align: center;
+        display: block;
+        font-size: 23px;
+      }
+      button {
+        padding: 20px 30px;
+        margin: 20px 30px 40px;
+        color: black;
+        background-color: grey;
+        font-size: 20px;
+        border: 3px solid greenyellow;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: greenyellow;
+        color: black;
+        cursor: pointer;
+      }
+      h1 {
+        font-size: 100;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: greenyellow;
+      }
+
+      h2 h3 {
+        line-height: 1.5;
+        margin: 10px 100px 20px;
+        font-size: 30px;
+        word-spacing: 2px;
+        font-weight: bold;
+      }
+      img {
+        width: 400px;
+        filter: brightness(116%) contrast(101%) saturate(141%) sepia(10%);
+        border: 5px solid #3a0817;
+        border-radius: 10px;
+      }
+
+      .filter {
+        width: 500px;
+      }
+      .heading {
+        font-size: 30px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+
+      .intro {
+        line-height: 3ch;
+        word-spacing: 2.5px;
+        margin: 20px 80px auto;
+      }
+      .items {
+        line-height: 3em;
+        word-spacing: 3px;
+        list-style: none;
+      }
+      .profile {
+        color: white;
+        text-decoration: none;
+      }
+      .top {
+        text-align: right;
+        word-spacing: 2cm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">Jobs Contact</div>
+    <h1>Varsågod🥂</h1>
+
+    <h2>About Us</h2>
+    <div class="intro">
+      Varsågod opened its door to its guests in 2012. It was started by a young
+      couple who lived in the beautiful city of Uppsala. Today it has over 10
+      restaurants around Sweden in 5 different cities; Stockholm, Uppsala,
+      Sundsvall, Örebro and Gothenburg. Varsågod is known for serving carefully
+      prepared Swedish dishes that have a twist of magic in every bite. The
+      dishes are inspired by our founder <em>Alam</em>. He is a veterian chef
+      who has many years of working experience in fine dining and education on
+      culinary arts. Today, he works with the F&B team to constantly upgrade
+      recipes to ensure it meets our guests' high expectation.
+    </div>
+    <h3>How to order</h3>
+    <div>
+      For takeaways select your favourates from the menu and click " Order Now".
+      <br />
+      Once you enter your name and e-mail address, we will send you an order
+      confirmation along with the payment details
+    </div>
+    <br />
+    <div class="booking">
+      For reservations, we are open everyday from 17:00-22:00. You are welcome!
+    </div>
+
+    <br />
+    <button>👉Book Now</button>
+    <br />
+    <div class="heading">Menu</div>
+    <ul class="items">
+      <li>Salmon tataki with crispy glass noodles.</li>
+      <li>Beetroot marinated salmon with roe.</li>
+      <li>Slow cooked loin of elk with pickled vegetables</li>
+      <li>Pan seared moose fillet with pakchoy and broccoli puree</li>
+      <li>Home made goat cheese with grapes and walnuts.</li>
+      <li>Ice cream sandwich.</li>
+    </ul>
+
+    <button class="takeaway-button">👉Order Now</button>
+    <br />
+    <div class="heading">Gallery</div>
+    <br />
+    <img
+      src="https://drive.google.com/thumbnail?id=1Nt5e1Jm7KiU_0OECwhDzOCjET3fLkSmt"
+    />
+    <img
+      src="https://drive.google.com/thumbnail?id=1dgw-8RmpHh6f-clBibYOEUa46YtpZf28"
+    />
+    <img
+      src="https://drive.google.com/thumbnail?id=1LVTUvptGXxL2d5CIrvQHffnCsb0FHZrH"
+    />
+    <img
+      src="https://drive.google.com/thumbnail?id=14EXRDWSaL_HdeOZozu_T_TvpXjRdQX9c"
+    />
+    <img
+      src="https://drive.google.com/thumbnail?id=1FZk-vVbHgSQ8MOklPiT5cD1BFi3yn_1f"
+    />
+
+    <img
+      class="filter"
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/875/original/image-0-02-05-09047c2db72762134d0b361b78d55bec0b739a2e5a6b751c97052f5320a78c37-V.jpg?1635337923"
+    />
+    <br />
+    <br />
+    <div>
+      This page is built by <strong> Tahsin Khan. </strong>
+
+      <a
+        href="https://www.linkedin.com/in/tahsin-khan-slu/"
+        target="https://www.linkedin.com/in/tahsin-khan-slu/"
+        class="profile"
+      >
+        Come visit my LinkedIn
+      </a>
+    </div>
+    <script>
+      function bookingButton() {
+        let name = prompt("What is your name?");
+        let time = prompt("When would you like to book a table?");
+        let mail = prompt("Please enter your e-mail address");
+        if (time < 1700) {
+          alert(
+            `Sorry ${name} we cannot make a booking. Our opening hours are 17:00-22:00`
+          );
+        } else {
+          if (time > 2200) {
+            alert(
+              `Sorry ${name} we cannot make a booking. Our opening hours are 17-22`
+            );
+          } else {
+            alert(`A confirmation email has been sent to ${mail}.Welcome!`);
+          }
+        }
+      }
+      let book = document.querySelector("button");
+      book.addEventListener("click", bookingButton);
+
+      function order() {
+        let name = prompt("What is your name?");
+        let food = prompt("What would you like to order?");
+        let mail = prompt("Please enter your e-mail address");
+        alert(
+          `Thank you ${name}.A order confirmation with payment details has been sent to  ${mail}.`
+        );
+      }
+      let externalOrder = document.querySelector(".takeaway-button");
+      externalOrder.addEventListener("click", order);
+    </script>
+  </body>
+</html>
